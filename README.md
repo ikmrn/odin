@@ -1,2 +1,2 @@
 # odin
-My first Odin GitHub repo!
+My first The Odin Project repo!
