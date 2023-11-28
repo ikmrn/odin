@@ -1,4 +1,4 @@
-let validOptions = ["rock", "paper", "scissors"];
+const validOptions = ["rock", "paper", "scissors"];
 
 function getComputerChoice() {
   let randomIndex = Math.floor(Math.random() * 3);
@@ -16,15 +16,11 @@ function checkInput(input) {
 
   const inputCap = input.toLowerCase();
   if (validOptions.includes(inputCap)) {
-    return inputCap
+    return inputCap;
   }
-    return "Choose from Rock, Paper or Scissors.";
-
+  return "Choose from Rock, Paper or Scissors.";
 }
 
-let playerSelection = prompt("Choice your sign!", "");
+let playerSelection = checkInput(prompt("Choice your sign!", ""));
 console.log(playerSelection);
-
-let test = checkInput(playerSelection)
-console.log(test)
 
