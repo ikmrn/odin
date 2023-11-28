@@ -1,4 +1,4 @@
-let validOptions = ["Rock", "Paper", "Scissors"];
+let validOptions = ["rock", "paper", "scissors"];
 
 function getComputerChoice() {
   let randomIndex = Math.floor(Math.random() * 3);
@@ -14,7 +14,7 @@ function checkInput(input) {
     return "Invalid input. Please provide a string.";
   }
 
-  const inputCap = input.charAt(0).toUpperCase() + input.slice(1).toLowerCase();
+  const inputCap = input.toLowerCase();
   if (validOptions.includes(inputCap)) {
     return inputCap
   }
@@ -27,3 +27,4 @@ console.log(playerSelection);
 
 let test = checkInput(playerSelection)
 console.log(test)
+
